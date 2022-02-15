@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{7194C22C-476A-4646-A552-B38C8A036273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxMinLib", "MaxMinLib\MaxMinLib.csproj", "{0D7CB1FB-9354-43BF-9F09-8FE08FA0E33E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7194C22C-476A-4646-A552-B38C8A036273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7194C22C-476A-4646-A552-B38C8A036273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7194C22C-476A-4646-A552-B38C8A036273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7194C22C-476A-4646-A552-B38C8A036273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D7CB1FB-9354-43BF-9F09-8FE08FA0E33E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D7CB1FB-9354-43BF-9F09-8FE08FA0E33E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D7CB1FB-9354-43BF-9F09-8FE08FA0E33E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D7CB1FB-9354-43BF-9F09-8FE08FA0E33E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

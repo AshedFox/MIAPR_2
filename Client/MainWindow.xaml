@@ -1,0 +1,49 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d" WindowState="Maximized"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="MediumPurple">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Name="MaxMinImage"/>
+        <Grid Grid.Row="1" Background="LightSteelBlue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0"  Content="Count of points" FontSize="18"/>
+            <TextBox  Grid.Row="0" Grid.Column="1" Name="PointsCountInput" FontSize="16" Background="Azure" Padding="5"
+                     Text="1000" HorizontalContentAlignment="Right" MaxLength="6"
+                     PreviewTextInput="PointsCountInput_OnPreviewTextInput"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Name="ReInitButton" Content="Initialize" Padding="10" FontSize="20" 
+                    Foreground="#1c1c1c" FontWeight="Bold" Click="ReInitButton_OnClick"/>
+            <Button Grid.Column="1" Name="IterateOnceButton" Content="Iterate Once" Padding="10" FontSize="20" 
+                    Foreground="#1c1c1c" FontWeight="Bold" IsEnabled="False" Click="IterateOnceButton_OnClick"/>
+            <Button Grid.Column="2" Name="IterateAllButton" Content="Iterate All" Padding="10" FontSize="20" 
+                    Foreground="#1c1c1c" FontWeight="Bold" IsEnabled="False" Click="IterateAllButton_OnClick"/>
+        </Grid>
+        <Grid Grid.Row="3" Background="Gainsboro">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Content="Is End?" FontSize="16"/>
+            <CheckBox Grid.Column="1" IsEnabled="False" Checked="MaxMinStatus_OnChecked" Name="MaxMinStatus" VerticalContentAlignment="Center"/>
+        </Grid>
+    </Grid>
+</Window>
